@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ``` 
 2️⃣ Configure environment variables Create a .env file in the project root if it doesn’t exist:
 ```
-bash TOKEN=your_telegram_bot_token CHROME_PATH=path_to_chromedriver.exe 
+TOKEN=your_telegram_bot_token CHROME_PATH=path_to_chromedriver.exe 
 ``` 
 🔹 TOKEN — Telegram bot token from @BotFather
 🔹 CHROME_PATH — Full path to your chromedriver.exe (used by Selenium)
@@ -59,7 +59,7 @@ bash TOKEN=your_telegram_bot_token CHROME_PATH=path_to_chromedriver.exe
 Download ChromeDriver matching your Chrome version. Unzip it and set the correct path in .env.
 Example:
 ```
-bash CHROME_PATH=D:\dev\python\telegram_bots\market-metrics\chromedriver.exe 
+CHROME_PATH=D:\dev\python\telegram_bots\market-metrics\chromedriver.exe 
 ``` 
 4️⃣ Run the bot Start the bot with:
 ```
@@ -67,7 +67,7 @@ python bot.py
 ``` 
 You should see:
 ```
-bash INFO:aiogram:Bot polling has started 
+INFO:aiogram:Bot polling has started 
 ``` 
 Then open your Telegram bot (e.g., @PriceInsiderBot ) and send /start.
 ---
@@ -83,9 +83,9 @@ categories.json — marketplace categories products.json — products and prices
 # 🧩 Common Errors Error Cause Solution
 ```
 ValueError: The path is not a valid file Invalid ChromeDriver path Check CHROME_PATH in .env 
-``` 
 telegram.error.Unauthorized Invalid bot token Get a new one from @BotFather
 SessionNotCreatedException Chrome and ChromeDriver version mismatch Install matching ChromeDriver
+``` 
 ---
 # 💡 Useful Commands Command Description
 ```
@@ -96,4 +96,5 @@ SessionNotCreatedException Chrome and ChromeDriver version mismatch Install matc
 ```
 Python 3.11+ -> Core language Aiogram -> Telegram bot framework Selenium -> Web automation and scraping Asyncio -> Asynchronous operations python-dotenv -> Environment configuration JSON -> Local data storage 
 ``
+
 
