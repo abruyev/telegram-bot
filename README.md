@@ -7,7 +7,8 @@ MarketMetrics is a Telegram bot that collects and analyzes data from online mark
 📊 Analytics — category and product metrics 
 🧱 Modular architecture — easily extendable and scalable
 ---
-```bash 📂 Project Structure MarketMetrics/ 
+```
+📂 Project Structure MarketMetrics/ 
 ├── bot.py # Entry point — runs the Telegram bot
 ├── config.py # Loads environment variables
 ├── handlers/ # Message and command handlers
@@ -26,25 +27,27 @@ MarketMetrics is a Telegram bot that collects and analyzes data from online mark
 ├── categories.json # Stored category data
 ├── .env # Environment configuration
 ├── requirements.txt # Dependencies list
-└── README.md ```
---- # ⚙️ Installation & Setup
+└── README.md
+```
+---
+# ⚙️ Installation & Setup
 1️⃣ Install dependencies Make sure Python 3.11+ is installed.
 Then create and activate a virtual environment:
 ```
-bash python -m venv .venv 
+python -m venv .venv 
 ```
 Windows:
 ```
-bash .venv\Scripts\activate 
+.venv\Scripts\activate 
 ``` 
 macOS / Linux:
 ```
-bash source .venv/bin/activate 
+source .venv/bin/activate 
 ``` 
 ---
 # Install the required packages:
 ```
-bash pip install -r requirements.txt
+pip install -r requirements.txt
 ``` 
 2️⃣ Configure environment variables Create a .env file in the project root if it doesn’t exist:
 ```
@@ -93,3 +96,4 @@ SessionNotCreatedException Chrome and ChromeDriver version mismatch Install matc
 ```
 Python 3.11+ -> Core language Aiogram -> Telegram bot framework Selenium -> Web automation and scraping Asyncio -> Asynchronous operations python-dotenv -> Environment configuration JSON -> Local data storage 
 ``
+
