@@ -1,14 +1,18 @@
 # 🧠 MarketMetrics
 MarketMetrics is a Telegram bot that collects and analyzes data from online marketplaces. It allows users to track product categories, prices, and performance metrics — all directly inside Telegram.
+
 --- 
+
 🚀 Features 🤖 Aiogram — powerful Telegram bot framework 
 🌐 Selenium — browser automation and data scraping 
 💾 JSON — local data storage 
 📊 Analytics — category and product metrics 
 🧱 Modular architecture — easily extendable and scalable
+
 ---
-```
+
 📂 Project Structure MarketMetrics/ 
+```
 ├── bot.py # Entry point — runs the Telegram bot
 ├── config.py # Loads environment variables
 ├── handlers/ # Message and command handlers
@@ -99,6 +103,7 @@ SessionNotCreatedException Chrome and ChromeDriver version mismatch Install matc
 ```
 Python 3.11+ -> Core language Aiogram -> Telegram bot framework Selenium -> Web automation and scraping Asyncio -> Asynchronous operations python-dotenv -> Environment configuration JSON -> Local data storage 
 ```
+
 
 
 
