@@ -47,14 +47,17 @@ source .venv/bin/activate
 ---
 # Install the required packages:
 ```
-pip install -r requirements.txt
+pip install aiogram
+pip install selenium
+pip install asyncio
+pip install python-dotenv
 ``` 
 2️⃣ Configure environment variables Create a .env file in the project root if it doesn’t exist:
 ```
 TOKEN=your_telegram_bot_token CHROME_PATH=path_to_chromedriver.exe 
-``` 
 🔹 TOKEN — Telegram bot token from @BotFather
 🔹 CHROME_PATH — Full path to your chromedriver.exe (used by Selenium)
+``` 
 3️⃣ Install ChromeDriver Ensure Google Chrome is installed.
 Download ChromeDriver matching your Chrome version. Unzip it and set the correct path in .env.
 Example:
@@ -96,6 +99,7 @@ SessionNotCreatedException Chrome and ChromeDriver version mismatch Install matc
 ```
 Python 3.11+ -> Core language Aiogram -> Telegram bot framework Selenium -> Web automation and scraping Asyncio -> Asynchronous operations python-dotenv -> Environment configuration JSON -> Local data storage 
 ```
+
 
 
 
