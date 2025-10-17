@@ -99,13 +99,6 @@ def uzum_products_keyboard(products, page=0, category_url=None):
     end = start + PRODUCTS_PAGE_SIZE
     current_products = products[start:end]
 
-    kb.row(
-        InlineKeyboardButton(
-            text="🔥 Топ Продаж",
-            callback_data=f"top_{category_url}"
-        )
-    )
-
     for i, p in enumerate(current_products, start=start):
         kb.row(InlineKeyboardButton(
             text=p['title'],
