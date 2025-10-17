@@ -95,6 +95,7 @@ SessionNotCreatedException Chrome and ChromeDriver version mismatch Install matc
 # 🧠 Tech Stack Technology Purpose
 ```
 Python 3.11+ -> Core language Aiogram -> Telegram bot framework Selenium -> Web automation and scraping Asyncio -> Asynchronous operations python-dotenv -> Environment configuration JSON -> Local data storage 
-``
+```
+
 
 
