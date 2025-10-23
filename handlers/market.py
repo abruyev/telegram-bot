@@ -330,7 +330,7 @@ async def yandex_category_callback(callback: types.CallbackQuery):
     await callback.message.edit_text(
         f"🛒 Товары категории **{category['title'].replace('.', '\\.')}**\\. Выберите товар ⬇️",
         parse_mode="MarkdownV2",
-        reply_markup=yandex_products_keyboard(products, page=0)
+        reply_markup=yandex_products_keyboard(products, page=0, category_url=category["url"].replace("https://market.yandex.uz/", ""))
     )
 
 
