@@ -117,8 +117,8 @@ async def uzum_category_callback(callback: types.CallbackQuery):
     products_cache[chat_id] = products
 
     await callback.message.edit_text(
-        f"🛒 Товары категории **{category['title'].replace('.', '\\.')}**\\. Выберите товар ⬇️",
-        parse_mode="MarkdownV2",
+        f"🛍️ *Товары категории {category['title']}*. Выберите товар 🧾",
+        parse_mode="Markdown",
         reply_markup=uzum_products_keyboard(products, page=0, category_url = category['url'].replace("https://uzum.uz/ru/category/", ""))
     )
 
